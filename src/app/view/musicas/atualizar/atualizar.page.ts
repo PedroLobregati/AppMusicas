@@ -64,7 +64,7 @@ export class AtualizarPage implements OnInit {
       return false;
     } else {
       this.alert.simpleLoader();
-      this.editar();
+      this.updateMusica();
       return true;
     }
   }
@@ -133,5 +133,13 @@ export class AtualizarPage implements OnInit {
         buttons: ['OK'],
       });
       await alert.present();
+    }
+
+    updateMusica() {
+      this.musica.nome = this.formEditar.value.nome;
+      this.musica.banda = this.formEditar.value.banda;
+      this.musica.anoLancamento = this.formEditar.value.anoLancamento;
+      this.musica.album = this.formEditar.value.album;
+      this.musica.genero = this.formEditar.value.genero;
     }
 }

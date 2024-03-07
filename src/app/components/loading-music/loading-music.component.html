@@ -1,5 +1,18 @@
-<ion-list style="background-color: transparent;">
-  <ion-item color="none" style="margin-top: 12%;" lines="none" *ngFor="let item of dummy">
-    <ion-spinner class="spin" slot="start"></ion-spinner>
+<ion-list>
+  <ion-item class="teste" lines="none" *ngFor="let item of dummy">
+    <ion-thumbnail slot="start">
+      <ion-skeleton-text animated></ion-skeleton-text>
+    </ion-thumbnail>
+    <ion-label>
+      <h4>
+        <ion-skeleton-text animated style="width: 50%;"></ion-skeleton-text>
+      </h4>
+      <p>
+        <ion-skeleton-text animated style="width: 50%;"></ion-skeleton-text>
+      </p>
+      <p>
+        <ion-skeleton-text animated style="width: 50%;"></ion-skeleton-text>
+      </p>
+    </ion-label>
   </ion-item>
 </ion-list>

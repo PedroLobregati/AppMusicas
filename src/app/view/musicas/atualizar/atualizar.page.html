@@ -14,37 +14,8 @@
   </ion-item>
 
   <form [formGroup]="formEditar" (ngSubmit)="submitForm()">
+    <app-music-form [musica]="musica" (formSubmit)="updateMusica()"></app-music-form>
 
-    <ion-item>
-      <ion-input label="Nome" placeholder="Nome da música" formControlName="nome" [disabled]="edicao"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input label="Banda" placeholder="Banda" formControlName="banda" [disabled]="edicao"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input label="Ano de Lançamento" placeholder="Ano de Lançamento" formControlName="anoLancamento" [disabled]="edicao"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input label="Álbum" placeholder="Álbum" formControlName="album" [disabled]="true"></ion-input>
-    </ion-item>
-      <ion-item>
-        <ion-select aria-label="Genero" interface="popover" placeholder="Gênero" formControlName="genero" [disabled]="true">
-          <ion-select-option value="Sertanejo">Sertanejo</ion-select-option>
-          <ion-select-option value="Pop-Rock">Pop-Rock</ion-select-option>
-          <ion-select-option value="Hip-hop">Hip-hop</ion-select-option>
-          <ion-select-option value="Pagode">Pagode</ion-select-option>
-          <ion-select-option value="Funk">Funk</ion-select-option>
-          <ion-select-option value="Dance/eletrônica">Dance/eletrônica</ion-select-option>
-          <ion-select-option value="Rock">Rock</ion-select-option>
-          <ion-select-option value="Jazz">Jazz</ion-select-option>
-          <ion-select-option value="Blues">Blues</ion-select-option>
-          <ion-select-option value="Country">Country</ion-select-option>
-          <ion-select-option value="Pop">Pop</ion-select-option>
-          <ion-select-option value="Clássica">Clássica</ion-select-option>
-          <ion-select-option value="Reggae">Reggae</ion-select-option>
-          <ion-select-option value="Bossa Nova">Bossa Nova</ion-select-option>
-        </ion-select>
-      </ion-item>
 
       <ion-item *ngIf="musica.downloadURL != null" class="custom-image">
         <div class="center-container">

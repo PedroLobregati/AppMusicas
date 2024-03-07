@@ -1,7 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
 import Musica from 'src/app/model/entities/Musica';
-import { MusicaService } from 'src/app/model/service/musica.service';
 
 @Component({
   selector: 'app-music',

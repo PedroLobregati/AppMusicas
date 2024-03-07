@@ -1,0 +1,36 @@
+<ion-item>
+  <ion-input label="Nome" placeholder="{{musica.nome ? musica.nome : 'Nome'}}" formControlName="nome"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input label="Banda" placeholder="{{musica.banda ? musica.banda : 'Banda/Cantor'}}" formControlName="banda"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input label="Ano de Lançamento" placeholder="{{musica.anoLancamento ? musica.anoLancamento : 'Ano de Lançamento'}}" type="number" formControlName="anoLancamento"></ion-input>
+</ion-item>
+
+<ion-item>
+  <!--<ion-datetime presentation="month-year"></ion-datetime>-->
+  <ion-input label="Álbum" placeholder="{{musica.album ? musica.album : 'Álbum'}}" formControlName="album"></ion-input>
+</ion-item>
+
+  <ion-item>
+    <ion-select aria-label="Genero" interface="popover" placeholder="{{musica.genero ? musica.genero : 'Gênero'}}" formControlName="genero">
+      <ion-select-option value="Sertanejo">Sertanejo</ion-select-option>
+      <ion-select-option value="Pop-Rock">Pop-Rock</ion-select-option>
+      <ion-select-option value="Hip-hop">Hip-hop</ion-select-option>
+      <ion-select-option value="Pagode">Pagode</ion-select-option>
+      <ion-select-option value="Funk">Funk</ion-select-option>
+      <ion-select-option value="Dance/eletrônica">Dance/eletrônica</ion-select-option>
+      <ion-select-option value="Rock">Rock</ion-select-option>
+      <ion-select-option value="Jazz">Jazz</ion-select-option>
+      <ion-select-option value="Blues">Blues</ion-select-option>
+      <ion-select-option value="Country">Country</ion-select-option>
+      <ion-select-option value="Pop">Pop</ion-select-option>
+      <ion-select-option value="Clássica">Clássica</ion-select-option>
+      <ion-select-option value="Reggae">Reggae</ion-select-option>
+      <ion-select-option value="Bossa Nova">Bossa Nova</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
